@@ -1,1 +1,393 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Katie Balint | Business Analytics & Finance</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+        /* General Sections */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #1e3a8a;
+        }
+
+        /* Personal Statement */
+        .about {
+            background-color: white;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: white;
+            border: 2px solid #2563eb;
+            color: #1e3a8a;
+            padding: 12px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+            transition: 0.2s;
+        }
+
+        .skill:hover {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .project-card p {
+            margin-bottom: 20px;
+            color: #555;
+            flex-grow: 1;
+        }
+
+        .project-link {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .project-link:hover {
+            background-color: #1e3a8a;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero {
+                padding: 75px 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <div class="logo">
+            Katherine Balint
+        </div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Personal Statement -->
+    <header class="hero" id="about">
+
+        <h1>Katherine Balint</h1>
+
+        <p>
+            Business Analytics and Finance student at Rutgers University
+            interested in using data, technology, and financial analysis
+            to solve business problems and support strategic decision-making.
+        </p>
+
+    </header>
+
+
+    <!-- Personal Statement Section -->
+    <section>
+
+        <div class="about">
+
+            <h2>Personal Statement</h2>
+
+            <p>
+                I am a Business Analytics and Finance student at Rutgers University
+                who combines analytical thinking, financial knowledge, and technology
+                skills to turn data into meaningful business insights.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Python</div>
+            <div class="skill">R</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Microsoft Excel</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Financial Analysis</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">Statistics</div>
+            <div class="skill">Financial Modeling</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Microsoft Office</div>
+            <div class="skill">Teamwork</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+
+            <!-- Deborah Heart and Lung Center -->
+            <div class="project-card">
+
+                <h3>Deborah Heart and Lung Center Analysis</h3>
+
+                <p>
+                    Analyzed employee morale, motivation, communication, and
+                    team effectiveness at Deborah Heart and Lung Center using
+                    interviews, employee surveys, and organizational behavior
+                    concepts. Developed recommendations to improve employee
+                    engagement, communication, and team effectiveness.
+                </p>
+
+                <a href="deborah-heart-and-lung-center.pdf"
+                   class="project-link"
+                   target="_blank">
+                    View Project PDF
+                </a>
+
+            </div>
+
+
+            <!-- Johnson & Johnson Business Ethics -->
+            <div class="project-card">
+
+                <h3>Johnson & Johnson Business Ethics Analysis</h3>
+
+                <p>
+                    Examined Johnson & Johnson's organizational culture, Credo,
+                    and ethical decision-making through the company's talc and
+                    baby powder controversy. Evaluated the conflict between the
+                    company's stated commitment to patient safety and its
+                    business and legal decisions.
+                </p>
+
+                <a href="johnson-and-johnson-ethics.pdf"
+                   class="project-link"
+                   target="_blank">
+                    View Project PDF
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Katherine Balint
+        </p>
+
+        <p>
+
+            <a href="https://github.com/katherinebalint"
+               target="_blank">
+                GitHub
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a href="https://www.linkedin.com/katherine-balint"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </p>
+
+    </footer>
+
+</body>
+</html>
+
+
 
